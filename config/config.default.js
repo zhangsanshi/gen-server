@@ -29,6 +29,9 @@ module.exports = appInfo => {
   exports.multipart = {
     whitelist: ['.zip']
   }
+  exports.security = {
+    csrf: false,
+  }
 
   return config
 }

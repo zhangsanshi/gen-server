@@ -20,6 +20,9 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 -- Table structure for app
 -- ----------------------------
+DROP DATABASE IF EXISTS `gen`;
+CREATE DATABASE `gen`;
+use `gen`;
 DROP TABLE IF EXISTS `app`;
 CREATE TABLE `app` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -341,6 +344,7 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
+INSERT INTO user set user_name="yanshi",user_pass="e10adc3949ba59abbe56e057f20f883e",user_email="xx@xx.com",created_at="2015-12-08 00:00:00",updated_at="2015-12-08 00:00:00";
 -- ----------------------------
 -- Table structure for valid
 -- ----------------------------

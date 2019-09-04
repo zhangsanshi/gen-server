@@ -57,6 +57,7 @@ module.exports = app => {
 }
 
 function getPost (router, ...params) {
+  params[0] = '/api' + params[0];
   // console.log(arguments)
   router.get.apply(router, params)
   router.post.apply(router, params)
